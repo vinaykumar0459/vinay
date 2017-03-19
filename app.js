@@ -36,6 +36,8 @@ app.use(bodyParser.json());
 app.use(passport.initialize());
 app.use(passport.session());
 
+require('./config/passport')(passport);
+
 // users route
 app.use('/users', users);
 
