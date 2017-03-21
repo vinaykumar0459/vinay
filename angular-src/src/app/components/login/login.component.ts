@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
       if(data.success) {
         console.log(data);
       this.authService.storeUserData(data.token, data.user);
-      this.flashMessage.show('Login Successfully', { 
+      this.flashMessage.show('Logged in Successfully', { 
         cssClass : 'alert-success', 
         timeOut : 3000 
       })
